@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is an Form Page of Kings Music Store">
+    <meta name="author" content="Ekamjot Singh">
+    <meta name="viewport" content="width=device_width">
+    <meta name="keywords" content="SCU, Ekamjot Singh, Kings Music Store, web development, Forms, Student, Music, jotekam4">
+    <title>Kings Music Store Signup Page</title>
+    <link href="css/KingsMusic_form.css" rel="stylesheet">
+    <script>
+        alert("Welcome to the Kings Music Store - Newsletter Signup");
+        function validateForm() {
+            if(document.forms[0].fname.value == "")
+            {
+                alert("First Name cannot be empty.")
+                return false;
+            }
+
+            else if(document.forms[0].lname.value == "")
+            {
+                alert("Last Name cannot be empty.")
+                return false;
+            }
+
+            else
+            {
+                alert("Form submitted sucessfully");
+                return true;
+            }
+        }
+    fuction 
+    </script>
+</head>
+<body>
+    <div>
+        <div id="heading">
+            <h1>Kings Music Store - Signup Dialog</h1>
+            <p>Fill in this form to get signed up to Kings Music Newsletter and keep in touch with
+             all the latest releases and news.</p>
+        </div>      
+        <div id="signupform">
+            <form action="http://infotech.scu.edu.au/cgi-bin/echo_form" method="POST"
+             target="http://infotech.scu.edu.au/cgi-bin/echo_form" onsubmit="return validateForm();">
+                <div class="flex-container">
+                    <div>
+                        <label for="fname">First Name*:</label>    
+                    </div>
+                    <input type="text" name="fname" id="fname" maxlength="60" size="60">
+                </div>
+                <div class="flex-container">
+                    <div>
+                        <label for="lname">Last Name*:</label>     
+                    </div>
+                    <input type="text" name="lname" id="lname" maxlength="60" size="60">
+                </div>
+                <div class="flex-container">
+                    <div>
+                        <label for="email">E-mail*:</label> 
+                    </div>
+                    <input type="email" name="email" id="email" maxlength="60" size="60" required>
+                </div>
+                <div class="flex-container rqfield">
+                    <div>
+                        <p><span style="font-size: 14px;">* Required Fields</span></p>
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div>
+                        Select you age:
+                    </div>
+                    <div>
+                        <input type="radio" name="age" id="15-25" value="15-25">
+                        <label for="15-25">15-25</label>
+                        <input type="radio" name="age" id="26-35" value="26-35">
+                        <label for="26-35">26-35</label>
+                        <input type="radio" name="age" id="36-45" value="36-45">
+                        <label for="36-45">36-45</label>
+                        <input type="radio" name="age" id="46-55" value="46-55">
+                        <label for="46-55">46-55</label>
+                        <input type="radio" name="age" id="55+" value="55+">
+                        <label for="55+">55+</label>
+                    </div>
+                </div>   
+                <br>  
+                <div class="flex-container">
+                    <div>
+                        Musical Taste:
+                    </div>
+                    <div>
+                        <div>
+                            <input type="checkbox" name="genre" id="heavyMetal" value="Heavy Metal">
+                            <label for="heavyMetal">Heavy Metal</label> 
+                        </div>
+                        <div>
+                            <input type="checkbox" name="genre" id="blues" value="Blues">
+                            <label for="blues">Blues</label> 
+                        </div>
+                        <div>
+                            <input type="checkbox" name="genre" id="classical" value="Classical">
+                            <label for="classical">Classical</label> 
+                        </div>
+                        <div>
+                            <input type="checkbox" name="genre" id="rockAndRoll" value="Rock & Roll">
+                            <label for="rockAndRoll">Rock & Roll</label> 
+                        </div>
+                        <div>
+                            <input type="checkbox" name="genre" id="folk" value="Folk">
+                            <label for="folk">Folk</label> 
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input type="checkbox" name="genre" id="counrtyWestern" value="Country and Western">
+                            <label for="counrtyWestern">Country & Western</label> 
+                        </div>
+                        <div>
+                            <input type="checkbox" name="genre" id="rockroll" value="Rock and Roll">
+                            <label for="rockroll">Rock & Roll</label> 
+                        </div>
+                        <div>
+                            <input type="checkbox" name="genre" id="jazz" value="Jazz">
+                            <label for="jazz">Jazz</label> 
+                        </div>
+                        <div>
+                            <input type="checkbox" name="genre" id="disco" value="Disco">
+                            <label for="disco">Disco</label> 
+                        </div>
+                        <div>
+                            <input type="checkbox" name="genre" id="opera" value="Opera">
+                            <label for="opera">Opera</label> 
+                        </div>
+                    </div>
+                </div> 
+                <br> 
+                <div class="button-container">
+                    <textarea name="userInfo" rows="3" cols="60"
+                     placeholder="Write any other Music Genre you're searching for..."></textarea>
+                </div>                 
+                <div class="button-container">
+                    <div>
+                        <button type="reset">Reset Fields</button>
+                    </div>
+                    <div>
+                        <button type="submit">Submit Now</button>
+                    </div>
+                </div>  
+            </form>
+
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2021 Ekamjot Singh | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

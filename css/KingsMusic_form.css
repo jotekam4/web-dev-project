@@ -1,0 +1,133 @@
+body
+{
+    background-image:url(../images/KingMusicBG.jpg) ;
+}
+
+p
+{
+    text-align: center;
+    font-family: "Century Gothic", "Bahnschrift SemiBold", Tahoma, Arial;
+    font-size: 16px;
+}
+
+h1
+{
+    font-family: "Century Gothic", "Bahnschrift SemiBold", Tahoma, Arial;
+    text-align: center;
+    font-size: 48px;
+}
+
+input[type=text]
+{
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid #c2802f;
+    background-color: #c2802f7e;
+    border-radius: 5px;
+}
+
+input[type=text]:hover
+{
+    border: 2px solid #30323d;
+}
+
+input[type=email]
+{
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid #c2802f;
+    background-color: #c2802f7e;
+    border-radius: 5px;
+}
+
+input[type=email]:hover
+{
+    border: 2px solid #30323d;
+}
+
+input[type=radio]
+{
+    padding-right: 50px;
+}
+
+#signupform
+{
+    background-color: rgba(255,204,153,0.85);
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    width:max-content;
+    font-family: "Century Gothic", "Bahnschrift SemiBold", Tahoma, Arial;
+    border-radius: 12px;
+}
+
+#heading
+{
+    padding: 10px;
+}
+
+button[type=submit], button[type=reset]
+{
+    font-family: "Century Gothic", "Bahnschrift SemiBold", Tahoma, Arial;
+    background-color: #D78D33;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    box-shadow: 0 4px #30323d9c;
+}
+
+button[type=submit]:hover, button[type=reset]:hover
+{
+    background-color: #c2802f;
+    text-align: center;
+}
+
+button[type=submit]:active, button[type=reset]:active
+{
+    background-color: #c2802f;
+    box-shadow: 0 2px #30323d;
+    transform: translateY(2px);
+}
+
+textarea
+{
+    font-family: "Century Gothic", "Bahnschrift SemiBold", Tahoma, Arial;
+    background-color: #c2802f7e;
+    border-radius: 5px;
+    padding: 10px;
+    border: 2px solid #c2802f;
+}
+
+textarea:hover
+{
+    border: 2px solid #30323d;
+} 
+
+.flex-container
+{
+    display: flex;
+}
+
+.flex-container > div
+{
+    min-width: 130px;
+    padding: 8px;
+}
+
+.button-container
+{
+    display: flex;
+    justify-content: center;
+}
+
+.button-container > div
+{
+    padding: 10px;
+}
+
+footer
+{
+    font-size: 30px;
+    color: #9A98B5;
+}

@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Montserrat:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #21242b;
+    min-height: 100vh;
+}
+
+p{
+    font-family: Montserrat, 'Segoe UI', sans-serif;
+    text-align: justify;
+    color:hsl(223, 8%, 50%);
+    font-size: 20px;
+}
+
+li, a, button{
+    font-family: Montserrat, 'Segoe UI', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+h1{
+    font-family: 'Bad Script', cursive;
+    font-weight: 400;
+    color: #FFD6BA;
+    font-size: 40px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background-color: hsl(177, 40%, 61%);
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.conlight{
+    background-color: hsl(223, 16%, 16%);
+}
+
+.flex-item{
+    justify-content: space-between;
+    min-width: 0px;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+.flex-item li, ol, ul{
+    font-size: 20px;
+    color:hsl(223, 8%, 50%)
+}
+
+.flx-item1{
+    min-width: 400px;
+    padding: 20px;
+    flex-grow: 1;
+    max-width: 800px;
+    align-self: center;
+}
+
+.flx-item2{
+    flex-grow: 0;
+    min-width: 500px;
+    max-height: 800px;
+    margin: 20px;
+}
+
+.flx-logo{
+    flex-grow: 0;
+    min-width: 300px;
+    margin: 20px 20px -90px 20px;
+}
+
+.flex-container img{
+    max-width: 600px;
+    object-fit: scale-down;
+    border-radius: 10px;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+nav a{
+    transition: all 0.3s ease 0s;
+    color: azure;
+    font-size: 20px;
+}
+
+nav a:hover{
+    transition: all 0.3s ease 0s;
+    color: #555B6E;
+    font-size: 20px;
+}
+
+button{
+    padding: 9px 25px;
+    border: none;
+    font-size: 20px;
+    border-radius: 50px;
+    background-color: #ffd4b8;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: #ffd4b873;
+}
+
+footer{
+    text-align: center;
+}
+
+footer p{
+    text-align: center;
+    padding: 20px;
+    font-size: 15px;
+    color:hsl(223, 8%, 50%);
+}
+
+.centering{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.logo{
+    font-family: 'Bad Script', cursive;
+    font-size: 40px;
+    font-weight: 400;
+    color: #FFD6BA;
+}
+
+table caption{
+    color:hsl(223, 8%, 50%);
+    margin: 20px;
+}
+
+table{
+    font-family: Montserrat, 'Segoe UI', sans-serif;
+    margin: 50px auto;
+    border-collapse: collapse;
+    font-size: 0.95em;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+table th{
+    padding: 12px 15px;
+}
+
+table td{
+    padding: 12px 15px;
+    width: 220px;
+}
+
+table tbody tr{
+    border-bottom: 1px solid hsla(24, 100%, 86%, 0.678);
+    color: hsl(226, 13%, 80%);
+}
+
+table thead tr{
+    background-color: hsla(24, 100%, 86%, 0.678);
+    font-weight: bold;
+    color: hsl(226, 13%, 10%);
+}
+
+table tr:nth-of-type(even){
+    background-color: hsl(223, 16%, 16%);
+}
